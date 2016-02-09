@@ -194,6 +194,12 @@ public class ZoomActivity extends FragmentActivity {
                         mCurrentAnimator = null;
                     }
 
+                    @Override
+                    public void onAnimationCancel(Animator animation) {
+                        thumbView.setAlpha(1f);
+                        expandedImageView.setVisibility(View.GONE);
+                        mCurrentAnimator = null;
+                    }
                 });
                 set.start();
                 mCurrentAnimator = set;
