@@ -187,12 +187,6 @@ public class ZoomActivity extends FragmentActivity {
                 set.setDuration(mShortAnimationDuration);
                 set.setInterpolator(new DecelerateInterpolator());
                 set.addListener(new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animation) {
-                        thumbView.setAlpha(1f);
-                        expandedImageView.setVisibility(View.GONE);
-                        mCurrentAnimator = null;
-                    }
 
                     @Override
                     public void onAnimationCancel(Animator animation) {
