@@ -31,5 +31,5 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 public class ZoomActivity extends FragmentActivity {
-   
+
 }
