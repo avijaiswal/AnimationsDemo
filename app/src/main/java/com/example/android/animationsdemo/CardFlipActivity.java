@@ -93,9 +93,9 @@ public class CardFlipActivity extends Activity
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                // Navigate "up" the demo structure to the launchpad activity.
+                // Navigate "up" the gdemo structure to the launchpad activity.
                 // See http://developer.android.com/design/patterns/navigation.html for more.
-                NavUtils.navigateUpTo(this, new Intent(this, MainActivity.class));
+                NavUtils.navigatgit eUpTo(this, new Intent(this, MainActivity.class));
                 return true;
 
             case R.id.action_flip:
